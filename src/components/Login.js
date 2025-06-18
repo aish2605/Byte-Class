@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Form, Alert } from "react-bootstrap";
-import { Button } from "react-bootstrap";
+import { Form, Alert, Button } from "react-bootstrap";
 import GoogleButton from "react-google-button";
 import { useUserAuth } from "../context/UserAuthContext";
-
 import "./login.css";
 
 const Login = () => {
@@ -31,53 +29,60 @@ const Login = () => {
       await googleSignIn();
       navigate("/home");
     } catch (error) {
-      console.log(error.message);
+      setError(error.message);
     }
   };
 
   return (
-    <>
-   <center></center> <div className="boxinfo">
-      <div className="p-4 box ">
-        <h2 className="mb-5 ">Login OneCourse</h2>
-        {error && <Alert variant="danger">{error}</Alert>}
-        <Form onSubmit={handleSubmit}>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Control
-              type="email"
-              placeholder="Email address"
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </Form.Group>
+    <div className="login-container">
+      <div className="login-left">
+        <div className="login-form-box">
+          <h1 className="login-title">Login to ByteClass</h1>
+          {error && <Alert variant="danger">{error}</Alert>}
+          <Form onSubmit={handleSubmit} className="main">
+            <Form.Group controlId="formBasicEmail">
+              <Form.Control
+                type="email"
+                placeholder="Email address or phone number"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </Form.Group>
 
-          <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Control
-              type="password"
-              placeholder="Password"
-              onChange={(e) => setPassword(e.target.value)}
-            />
-          </Form.Group>
+            <Form.Group controlId="formBasicPassword">
+              <Form.Control
+                type="password"
+                placeholder="Password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+            </Form.Group>
 
-          <div className="d-grid gap-2">
-            <Button variant="primary" type="Submit">
+            <div className="login-forgot">Forgot your password?</div>
+
+            <Button className="login-button" variant="primary" type="submit">
               Log In
             </Button>
+          </Form>
+
+          <div className="login-or">or</div>
+
+          <GoogleButton className="g-btn" type="dark" onClick={handleGoogleSignIn} />
+
+          <div className="login-signup">
+            Don't have an account? <Link to="/signup">Sign up</Link>
           </div>
-        </Form>
-        <hr />
-        <div>
-          <GoogleButton
-            className="g-btn"
-            type="dark"
-            onClick={handleGoogleSignIn}
-          />
         </div>
       </div>
-      <div className="p-4 box mt-3 text-center">
-        Don't have an account? <Link to="/signup" className="name">Sign up</Link>
+
+      <div className="login-right">
+        <img
+          src={`${process.env.PUBLIC_URL}/images/login.jpg`}
+          alt="Login Illustration"
+          className="login-image"
+        />
       </div>
-      </div>
-    </>
+    </div>
   );
 };
 

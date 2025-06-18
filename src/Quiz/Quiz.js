@@ -138,7 +138,7 @@ const Quiz = () => {
 
   return (
     <div className="quiz-container">
-      <h2>Question {currentQuestion + 1}</h2>
+      <h1>Question {currentQuestion + 1}</h1>
       <p>{questions[currentQuestion].question}</p>
       {questions[currentQuestion].options.map((option) => (
         <label key={option} className={`option-label ${answers[currentQuestion] === option ? 'selected' : ''}`}>

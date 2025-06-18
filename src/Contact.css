@@ -1,0 +1,85 @@
+.contactus-section {
+  background: #7c86dcb0;
+  padding: 40px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-box {
+  width:90%;
+  margin: auto;
+  display: flex;
+  gap: 40px;
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+  flex: 1;
+}
+
+.right-section {
+  flex: 1;
+}
+
+.heading {
+  font-size: 30px;
+  font-weight: bold;
+  color: #8087e7;
+  margin-bottom: 20px;
+}
+
+.sub-text {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.img-contact {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.input-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.input-field {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.input-field.full {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.checkbox-area {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #444;
+}
+
+.submit-btn {
+  background-color: #8c6fec;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  width: 40%;
+  font-size: 15px;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}

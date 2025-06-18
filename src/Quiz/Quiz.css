@@ -7,12 +7,13 @@
     border: 2px solid #ccc;
     border-radius: 10px;
     background-color: #f9f9f9;
-    max-width: 600px;
+   width: 500px;
     margin-left: auto;
     margin-right: auto;
+   
 }
 
-h2 {
+h1 {
     color: #333;
 }
 
@@ -24,6 +25,7 @@ h2 {
     border-radius: 5px;
     cursor: pointer;
     background-color: #fff;
+    font-size: 15px;
 }
 
 .option-label:hover {
@@ -31,7 +33,7 @@ h2 {
 }
 
 .option-label.selected {
-    background-color: #d1e7dd;
+    background-color: #92f8ca;
     border-color: #0f5132;
 }
 
@@ -44,11 +46,14 @@ button {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #007bff;
+    background-color: #583c92;
     color: white;
     cursor: pointer;
 }
 
 button:hover {
     background-color: #0056b3;
+}
+p{
+    font-size: 15px;
 }
