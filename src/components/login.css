@@ -43,7 +43,7 @@ body, html {
 .login-title {
   font-size: 24px;
   font-weight: 600;
-  color: #725ee2;
+  color: #aa97c1;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -63,7 +63,7 @@ body, html {
   width:150px;
   padding: 12px;
   border-radius: 30px;
-  background-color:#725ee2;
+  background-color:#aa97c1;
   border: none;
   font-weight: 500;
     font-size: 15px;
@@ -80,7 +80,7 @@ body, html {
   text-align: right;
   font-size: 14px;
   margin-bottom: 20px;
-  color: #725ee2;
+  color: #aa97c1;
   cursor: pointer;
 }
 
@@ -91,7 +91,7 @@ body, html {
 }
 
 .login-signup a {
-  color: #725ee2;
+  color: #aa97c1;
   font-weight: 500;
   text-decoration: none;
 }

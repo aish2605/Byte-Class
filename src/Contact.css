@@ -1,5 +1,5 @@
 .contactus-section {
-  background: #7c86dcb0;
+  background: #aa97c1;
   padding: 40px 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -26,7 +26,7 @@
 .heading {
   font-size: 30px;
   font-weight: bold;
-  color: #8087e7;
+  color:#aa97c1;
   margin-bottom: 20px;
 }
 
@@ -70,7 +70,7 @@
 }
 
 .submit-btn {
-  background-color: #8c6fec;
+  background-color:#aa97c1;
   color: white;
   padding: 14px;
   border: none;

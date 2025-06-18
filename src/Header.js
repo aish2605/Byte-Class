@@ -1,42 +1,31 @@
 import React from "react";
+import "./header.css";
 
 const Header = () => {
   return (
-    <>
-      <header>
-        <section className="container main-hero-container">
-          <div className="row">
-            <div className="col-12 col-lg-6 header-left-side d-flex justify-content-center flex-column align-items-start ">
-              <h1 className="display-2">
-                Learning New Technology <br /> One Course Made it Easy
-              </h1>
-              <p className="main-hero-para">
-              Find the right courses for you. Choose from many topics, skill levels, and languages. Watch thousands of high-quality on-demand online courses. Start learning today. Watch in-demand courses. Start learning today. Hone skills with practice. Learn on your schedule.
-              </p>
-             
-              <div className="input-group mt-3">
-              
-              <a href="/Courses"><button className="btn-style btn-style-border" >Start Now </button></a>
-              </div>
-            </div>
-            {/*  --------------- main header right side--------------  */}
-            <div className="col-12 col-lg-6 header-right-side d-flex justify-content-center align-items-center main-herosection-images">
-              <img
-                src="./images/hero1.jpg"
-                alt="heroimg"
-                className="img-fluid"
-              />
-              <img
-                src="./images/hero4.jpg"
-                alt="heroimg4"
-                className="img-fluid main-hero-img2"
-              />
-            </div>
+    <header className="custom-header">
+      <div className="custom-container">
+        <div className="header-left">
+          <h1 className="header-title">
+            Learn New Technology <br /> Easily with Byte Class
+          </h1>
+          <p className="header-description">
+            Choose from thousands of expert-led courses across hundreds of topics. Learn on your own time, at your own pace — anytime, anywhere.
+          </p>
+          <a href="/Courses">
+            <button className="glassy-button">Start Learning</button>
+          </a>
+        </div>
+
+        <div className="header-right">
+          <div className="header-img-wrapper">
+            <img src="./images/h1.jpg" alt="hero" className="main-img" />
+            
           </div>
-        </section>
-      </header>
-    </>
+        </div>
+      </div>
+    </header>
   );
 };
 
-export default Header;
+export default Header;
