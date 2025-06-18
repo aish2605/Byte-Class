@@ -22,7 +22,7 @@ const Aboutus = () => {
       {/* Embedded CSS */}
       <style>{`
         .about-section {
-          background:  #dfd9e6;;
+          background:  #dfd9e6;
           color: #fff;
           padding: 80px 20px;
           font-family: "Poppins", sans-serif;

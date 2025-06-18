@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Form, Alert, Button } from "react-bootstrap";
 import { useUserAuth } from "../context/UserAuthContext";
-import "./Signup.css"; // Reusing the same CSS
+import "./login.css"; // Reusing the same CSS
 
 const Signup = () => {
   const [email, setEmail] = useState("");
