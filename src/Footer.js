@@ -3,23 +3,20 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <footer>
-        <div className="container">
+      <footer >
+        <div className="container" >
           <div className="row">
             <div className="col-12 col-lg-10 mx-auto">
               <div className="row">
                 
 
-                {/* <div className="col-6 col-lg-3">
-                  <p><h2>MS Bidve Engineering College  <t></t> </h2>Barshi Rd, Pakharsangvi, Latur, Maharashtra</p>
                 
-                </div> */}
                 <div className="col-6 col-lg-3">
                   <p><h2>Phone</h2>9322166695<br></br>9850208044  </p>
                 
                 </div>
                 <div className="col-6 col-lg-3">
-                  <p><h2>Support</h2>onecoursesupport@gmail.com <br></br>onecoursesupport@yahoo.com  </p>
+                  <p><h2>Support</h2>bytesupport@gmail.com <br></br>bytesupport@yahoo.com  </p>
                 
                 </div>
                 
@@ -49,7 +46,7 @@ const Footer = () => {
               <hr />
               <div className="mt-5">
                 <p className="main-hero-para text-center w-100">
-                  Copyright @ 2022 OneCourse. All rights reserved.
+                  Copyright @ 2022 ByteClass. All rights reserved.
                 </p>
               </div>
             </div>

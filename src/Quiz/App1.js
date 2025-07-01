@@ -14,9 +14,9 @@ const App1 = () => {
         AlignItems:"center",
        justifyContent:"center" ,backgroundColor:"#dfd9e6"}} >
       <h1   style={{display:"flex",
-      
+         
         AlignItems:"center",
-       justifyContent:"center" ,fontSize:"40px"}}>Welcome to the Quiz App</h1>
+       justifyContent:"center" ,fontSize:"30px"}}>Welcome to the Quiz App</h1>
       <Quiz />
     </div>
   );

@@ -13,14 +13,17 @@
   padding: 40px;
   border-radius: 16px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  flex-wrap:wrap;
 }
 
 .left-section {
   flex: 1;
+  flex-wrap:wrap;
 }
 
 .right-section {
   flex: 1;
+  flex-wrap:wrap;
 }
 
 .heading {
@@ -45,6 +48,7 @@
   display: flex;
   gap: 16px;
   margin-bottom: 16px;
+  flex-wrap:wrap;
 }
 
 .input-field {
